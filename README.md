@@ -38,18 +38,37 @@ This project leverages a logistic regression model to predict customer churn and
 
 ## **Usage**
 1. **Setup:**
-   - Install required R packages: `dplyr`, `ggplot2`, `caret`, `pROC`, `corrplot`.
+   - Install required R packages:
+     - `dplyr`
+     - `ggplot2`
+     - `caret`
+     - `pROC`
+     - `corrplot`
+
 2. **Run the Scripts:**
    - `data_preparation.R`: Prepares the dataset.
    - `exploratory_data_analysis.R`: Performs EDA and saves visualizations.
    - `logistic_regression_model.R`: Fits the logistic regression model.
    - `model_evaluation.R`: Evaluates model performance and saves metrics.
-3. **Outputs:**
-   - `model_metrics.txt`: Contains Accuracy, Precision, Recall, F1 Score, and AUC.
-   - `confusion_matrix.csv`: Confusion matrix.
-   - Visualizations saved as PNG files.
 
----
+3. **Outputs:**
+
+### 3.1 **Data Visualizations:**
+- `tenure_histogram.png`: Histogram showing the distribution of customer tenure.
+- `monthly_charges_boxplot.png`: Boxplot illustrating monthly charges by churn status.
+- `contract_type_bar_chart.png`: Bar chart displaying the proportion of churn across different contract types.
+- `correlation_heatmap_with_numbers.png`: Heatmap showcasing correlations among numerical features.
+
+### 3.2 **Performance Metrics:**
+- `model_metrics.txt`: Includes Accuracy, Precision, Recall, F1 Score, and AUC for the logistic regression model.
+
+### 3.3 **Confusion Matrix:**
+- `confusion_matrix.csv`: Tabular representation of predicted versus actual churn classifications.
+
+### 3.4 **Saved Data and Models:**
+- `training_set.RData`: The training dataset after preprocessing.
+- `test_set.RData`: The test dataset after preprocessing.
+- `logistic_model.RData`: The trained logistic regression model for churn prediction.
 
 ## **Future Work**
 - Implement advanced models like Random Forest or Gradient Boosting.
